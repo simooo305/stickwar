@@ -24,21 +24,31 @@
       margin: 5px 0 0;
       color: #aaa;
     }
-    .hero {
-      background: url('https://play-lh.googleusercontent.com/kN4-OTkkljZZ0gMOGyb2WOm0pNSpmAcdOhICqnUbpuSnRt4gweEtu8FRhRjTW2OL1Ek') no-repeat center center/cover;
-      height: 400px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .game-image {
+      text-align: center;
+      margin: 40px 0 20px;
     }
-    .hero h2 {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 10px;
-      font-size: 2em;
+    .game-image img {
+      width: 90%;
+      max-width: 700px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .download {
+      text-align: center;
+      margin: 20px 0 40px;
+    }
+    .download a {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #e63946;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.2em;
     }
     .content {
-      padding: 40px 20px;
+      padding: 0 20px 40px;
       max-width: 900px;
       margin: auto;
     }
@@ -50,31 +60,12 @@
       line-height: 1.6;
       color: #ccc;
     }
-    .download {
-      text-align: center;
-      margin: 40px 0;
-    }
-    .download a {
-      display: inline-block;
-      padding: 15px 30px;
-      background: #e63946;
-      color: #fff;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 1.2em;
-    }
     footer {
       background: #222;
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
       color: #777;
-    }
-    @media (max-width: 600px) {
-      .hero h2 {
-        font-size: 1.5em;
-        padding: 15px;
-      }
     }
   </style>
 </head>
@@ -85,9 +76,15 @@
   <p>Lead your army. Conquer the world of Inamorta.</p>
 </header>
 
-<section class="hero">
-  <h2>Experience the ultimate stickman strategy game</h2>
+<section class="game-image">
+  <img src="https://i.postimg.cc/c15BF5M7/stickwar-2.avif" alt="Stick War Legacy Game Image" />
 </section>
+
+<div class="download">
+  <a href="https://play.google.com/store/apps/details?id=com.maxgames.stickwarlegacy" target="_blank">
+    Download on Google Play
+  </a>
+</div>
 
 <section class="content">
   <h3>About the Game</h3>
@@ -103,12 +100,6 @@
     <li>Survival mode and endless zombie challenges</li>
     <li>Customize and upgrade your army</li>
   </ul>
-
-  <div class="download">
-    <a href="https://play.google.com/store/apps/details?id=com.maxgames.stickwarlegacy" target="_blank">
-      Download on Google Play
-    </a>
-  </div>
 </section>
 
 <footer>
