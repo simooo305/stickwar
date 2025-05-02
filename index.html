@@ -21,13 +21,19 @@
 
     header {
       background: #222;
-      padding: 40px 20px;
+      padding: 50px 20px 30px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
       font-size: 3em;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    header h1 span {
+      color: #00bcd4;
     }
 
     header p {
@@ -36,35 +42,45 @@
       color: #bbb;
     }
 
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+    }
+
     .game-image {
       text-align: center;
-      margin: 50px 0 30px;
+      margin: 40px 0 20px;
     }
 
     .game-image img {
-      width: 100%;
-      max-width: 750px;
+      width: 90%;
+      max-width: 700px;
       border-radius: 15px;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
 
     .download {
       text-align: center;
-      margin: 30px 0 50px;
+      margin: 20px 0 40px;
     }
 
     .download h3 {
-      font-size: 1.8em;
       margin-bottom: 20px;
+      font-size: 1.8em;
     }
 
     .download button {
       background-color: #00bcd4;
       color: white;
       border: none;
-      padding: 15px 35px;
+      padding: 15px 30px;
       font-size: 1.2em;
-      border-radius: 10px;
+      border-radius: 8px;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
@@ -74,7 +90,9 @@
     }
 
     .content {
-      margin-bottom: 60px;
+      padding: 0 20px 40px;
+      max-width: 900px;
+      margin: auto;
     }
 
     .content h3 {
@@ -105,7 +123,7 @@
 
   <header>
     <div class="container">
-      <h1>Stick War: Legacy Mod</h1>
+      <h1><span>Stick War:</span> Legacy Mod</h1>
       <p>Lead your army. Conquer the world of Inamorta.</p>
     </div>
   </header>
